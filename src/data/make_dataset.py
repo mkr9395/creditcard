@@ -33,7 +33,11 @@ def main():
     #input_file = pathlib.Path(home_dir / 'data/raw/credit_card.csv').as_posix()
     #print(input_file)
     
-    data_path = pathlib.Path(home_dir / 'data/raw/creditcard.csv').as_posix()
+    input_file = sys.argv[1]
+    
+    data_path = home_dir.as_posix() + input_file
+    
+    #data_path = Path(home_dir / 'data/raw/creditcard.csv').as_posix()
     output_path = (home_dir / 'data/processed').as_posix()
     
     data = load_data(data_path)
