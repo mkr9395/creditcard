@@ -14,10 +14,10 @@ stages:
     params:
       params.yaml:
         make_dataset.seed: 2023
-        make_dataset.test_split: 0.3
+        make_dataset.test_split: 0.5
     outs:
     - path: .\data\processed\
       hash: md5
-      md5: ce9ce5406ae0d8cee486d4f77feaa571.dir
+      md5: c7e897899c3573acd7d404fa68f6bc17.dir
       size: 151102527
       nfiles: 3
