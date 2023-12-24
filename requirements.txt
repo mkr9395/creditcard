@@ -1,4 +1,15 @@
 # local package
+dvc
+dvc_live
+dvc_gdrive
+
+scikit-learn
+pandas
+numpy
+matplotlib
+seaborn
+
+
 -e .
 
 # external requirements
