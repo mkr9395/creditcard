@@ -1,7 +1,6 @@
 # local package
 dvc
-dvc_live
-dvc_gdrive
+dvclive
 
 scikit-learn
 pandas
