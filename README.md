@@ -1,4 +1,4 @@
-cc_project2
+credit card mlops project
 ==============================
 
 a credit card test project
