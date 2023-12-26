@@ -1,0 +1,37 @@
+name: CI Pipeline
+
+on:
+  push:
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  integration:
+    name: Continuous integration
+    runs-on: [ubuntu-latest]
+    steps:
+    - name: Checkout Repo
+      uses: actions/checkout@v3
+
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11.5'
+
+    - name: Run unit tests
+      run: echo "Running unit test"
+
+    - uses: iterative/setup-cml@v1
+
+    
+    
+    - name: Train model
+      env:
+        REPO_TOKEN: ${{ secrets.SECRET_TOKEN }}
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+        
+        dvc exp run -v
