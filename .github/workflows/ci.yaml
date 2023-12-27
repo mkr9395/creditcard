@@ -23,7 +23,7 @@ jobs:
     - name: Run unit tests
       run: echo "Running unit test"
 
-    - uses: iterative/setup-cml@v1
+    - uses: iterative/setup-cml@v2
 
     
     
